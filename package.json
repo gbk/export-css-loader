@@ -1,0 +1,26 @@
+{
+  "name": "export-css-loader",
+  "version": "1.0.0",
+  "author": {
+    "name": "gbk",
+    "email": "ck0123456@gmail.com"
+  },
+  "description": "export css loader module for webpack",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gbk/export-css-loader.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "dependencies": {
+    "loader-utils": "~0.2.11"
+  },
+  "bugs": {
+    "url": "https://github.com/gbk/export-css-loader/issues"
+  },
+  "homepage": "https://github.com/gbk/export-css-loader"
+}
