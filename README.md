@@ -34,6 +34,16 @@ module.exports = {
 };
 ```
 
+### Query Parameters
+
+- remove {boolean | Default to `false`}
+
+Remove CSS content from module to reduce the size of the bundle.
+
+- write {boolean | Default to `true`}
+
+Write CSS content into css file.
+
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
