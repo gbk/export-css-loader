@@ -31,7 +31,7 @@ module.exports = function(source) {
             });
         }
         if (query.remove) {
-            cb(null, source.split('// exports')[1]);
+            cb(null, source.split('// exports')[1].replace('exports.locals', 'module.exports'));
         } else {
             cb(null, source);
         }
