@@ -3,6 +3,7 @@
 var fs = require("fs");
 var path = require('path');
 var loaderUtils = require("loader-utils");
+var mkdirp = require('mkdirp');
 
 module.exports = function(source) {
     this.cacheable && this.cacheable();
@@ -25,6 +26,7 @@ module.exports = function(source) {
             eval(code);
             code = exports[0][1];
             var filename = path.basename(this.context) + '.css';
+            mkdirp.sync(this.options.output.path);
             var filepath = path.join(this.options.output.path, filename);
             fs.writeFile(filepath, code, function(err) {
                 err && console.log('Generating css failed: ' + filepath);
